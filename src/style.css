@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+  --scrollbar-width: calc(100vw - 100%);
+  --background-color: #29d1ff;
+  --shadow-color: #00c8ff;
+  --text-color: #003d4e;
+  --button-color0: #00c8ff;
+  --button-color1: #045804;
+  --button-color2: #ff0d00;
+  --button-color3: #0b005e;
+  --button-color4: #000000;
+  --button-color5: #ff777b;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+html, body {
+  overflow-x: hidden;
+  user-select: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-width: 100vw;
+  max-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.HD_SECTION, .FTR_SEC{
+    margin: 10px;
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    background-color: var(--background-color);
+}
+.HD_DIV, .FTR_DIV{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.FTR_DIV{
+    height: 12vh;
+}
+.HD_H1, .FTR{
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    font-size: 22px;
+    color: var(--text-color);
+}
+.FTR{
+    font-size: 14px;
+    font-weight: 600;
+}
+.FIRST{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+.FIRST_P_DIV, .FIRST_IMG_DIV, .FIRST_IMG_DIV1{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.P_DIV{
+    text-align: justify;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    font-size: 13px;
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.IMAGE{
+    width: 200px;
+    height: 200px;
+}
+.IMAGE0 {
+    filter: drop-shadow(5px -5px 3px var(--button-color0));
+}
+.IMAGE1{
+    filter: drop-shadow(5px 5px 3px var(--button-color1));
+}
+.IMAGE2{
+    filter: drop-shadow(-6px 6px 3px var(--button-color2));
+}
+.IMAGE3{
+    filter: drop-shadow(-6px 6px 3px var(--button-color3));
+}
+.FIRST_IMG_DIV1{
+    perspective: 800px; 
+}
+.IMAGE4{
+    transform: rotateY(15deg) rotateX(15deg);
+    transition: transform 0.3s ease-in-out;
+    filter: drop-shadow(-6px 6px 3px var(--button-color4));
+}
+.IMAGE5{
+    transform: rotateY(-20deg) rotateX(20deg);
+    transition: transform 0.3s ease-in-out;
+    filter: drop-shadow(-6px 6px 3px var(--button-color5));
+}
+.BTN{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    margin: 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+}
+.BTN i {
+    color: white;
+}
+.BTN1{
+    background: var(--button-color1);
+}
+.BTN2{
+    background-color: var(--button-color2);
+}
+.BTN3{
+    background-color: var(--button-color3);
+}
+.BTN4{
+    background-color: var(--button-color4);
+}
+.BTN5{
+    background-color: var(--button-color5);
+}
+.BTN1:hover {
+    border: 2px solid var(--button-color1);
+    background-color: white;
+}
+.BTN1:hover i {
+    color: var(--button-color1);
+}
+.BTN2:hover {
+    border: 2px solid var(--button-color2);
+    background-color: white;
+}
+.BTN2:hover i {
+    color: var(--button-color2);
+}
+.BTN3:hover {
+    border: 2px solid var(--button-color3);
+    background-color: white;
+}
+.BTN3:hover i {
+    color: var(--button-color3);
+}
+.BTN4:hover {
+    border: 2px solid var(--button-color4);
+    background-color: white;
+}
+.BTN4:hover i {
+    color: var(--button-color4);
+}
+.BTN5:hover {
+    border: 2px solid var(--button-color5);
+    background-color: white;
+}
+.BTN5:hover i {
+    color: var(--button-color5);
+}
+@media screen and (max-width: 1024px) {
+    .FIRST{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .FIRST_IMG_DIV {
+        order: -1;
+    }
+    .FIRST_P_DIV {
+        order: 1;
+    }
+    .P_DIV{
+        text-align: center;
+    }
+}

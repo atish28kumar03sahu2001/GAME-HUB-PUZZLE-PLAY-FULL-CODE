@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --scrollbar-width: calc(100vw - 100%);
+    --primary-color: rgb(106, 216, 233);
+    --secondary-color: rgb(13, 85, 96);
+}
+::-webkit-scrollbar{ display: none; }
+html, body{
+ overflow-x: hidden;
+ user-select: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-width: 100vw;
+    max-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.HDIV_H1{
+    margin: 10px;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.H1_DIV{
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    font-size: 26px;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+.BOARD_SECTION{
+    margin: 10PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BOARD_DIV{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+}
+.BOARD_CANVAS{
+    width: 100%;
+    height: 100%;
+}
+.SCORE_DIV{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.SCORE_P{
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    font-size: 15px;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+.BUTTON_SECTION{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.BUTTON_SECTION_ONE{
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.BUTTON_SECTION_TWO{
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.BUTTON{
+    outline: none;
+    background: none;
+    border-radius: 10px;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+#game_over{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 1440px) {
+    .BOARD_DIV{
+        width: 450px;
+        height: 450px;
+    }
+    .BUTTON_SECTION_TWO{ display: none; }
+}
+@media screen and (max-width: 1440px) {
+    .BOARD_DIV{
+        width: 450px;
+        height: 450px;
+    }
+    .BUTTON_SECTION_TWO{ display: none; }
+}
+@media screen and (max-width: 1024px) {
+    .BOARD_DIV{
+        width: 450px;
+        height: 450px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .BOARD_DIV{
+        width: 300px;
+        height: 300px;
+    }
+    .BUTTON_SECTION_TWO{ display: flex; }
+    .BUTTON_SECTION_ONE{ display: none; }
+    .BUTTON{ margin: 7px; }
+}
+@media screen and (max-width: 425px) {
+    .BOARD_DIV{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .BOARD_DIV{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .BOARD_DIV{
+        width: 250px;
+        height: 250px;
+    }
+}

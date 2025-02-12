@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- META TAG ADDED -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A classic Tetris game built with HTML5, CSS3, and JavaScript. Featuring simple graphics and interactive gameplay.">
+  <meta name="keywords" content="HTML5, CSS3, JavaScript, TETRIS GAME, Responsive Web Design, Arcade Online Games">
+  <meta name="author" content="MAKS VOID">
+  <!-- FONT AWSOME ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- FAVICON ADDED -->
+  <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+  <link rel="manifest" href="./site.webmanifest" />
+  <!-- STYLE FILE ADDED -->
+  <link rel="stylesheet" href="./styles/tetris.css">
+  <!-- WEB TITLE ADDED -->
+  <title>Tetris Game: Maks Void</title>
+</head>
+<body>
+  <!-- HEADER SECTION -->
+  <section class="HD_SECTION">
+    <div class="HD_DIV">
+      <h1 class="H1_DIV">Tetris Game</h1>
+    </div>
+  </section>
+  <!-- TETRIS GAME BOARD -->
+  <canvas id="tetris" class="CANVAS" width="225" height="450"></canvas>
+  <!-- GAME SCORE SECTION -->
+  <div class="SCR_DIV">
+    <p class="GSP">Game Score: <span class="SCORE" id="score">0</span></p>
+  </div>
+  <!-- BUTTON SECTION FOR MOBILE VIEW -->
+  <section class="BTN_SEC" id="BTN_SEC">
+    <div class="BTN1">
+      <button class="BTN" id="UP"><i class="fa-solid fa-arrow-up fa-lg" style="color: #ffffff;"></i></button>
+    </div>
+    <div class="BTN2">
+      <button class="BTN" id="LEFT"><i class="fa-solid fa-arrow-left fa-lg" style="color: #ffffff;"></i></button>
+      <button class="BTN" id="SPACE"><i class="fa-solid fa-arrows-rotate fa-lg" style="color: #ffffff;"></i></button>
+      <button class="BTN" id="RIGHT"><i class="fa-solid fa-arrow-right fa-lg" style="color: #ffffff;"></i></button>
+    </div>
+    <div class="BTN1">
+      <button class="BTN" id="DOWN"><i class="fa-solid fa-arrow-down fa-lg" style="color: #ffffff;"></i></button>
+    </div>
+  </section>
+  <!-- SCRIPT FILE ADDED -->
+  <!-- <script type="module" src="./script/tetris.js" defer></script> -->
+  <script type="module" src="/script/tetris.js" defer></script>
+</body>
+</html>
